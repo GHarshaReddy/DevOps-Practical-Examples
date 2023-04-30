@@ -9,3 +9,14 @@ for (( i=0; i<5; i++))
 do
 	echo $i
 done
+
+#Lets print some files
+
+for item in *
+do
+	if [ -f $item ]
+	then 
+		echo $item
+	fi
+done
+
